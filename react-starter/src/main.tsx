@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import { HeroUIProvider } from "@heroui/react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Theme as RadixTheme } from "@radix-ui/themes";
@@ -31,7 +31,7 @@ const muiTheme = createTheme({
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <HeroUIProvider>
         <ThemeProvider theme={muiTheme}>
           <RadixTheme accentColor="pink" radius="medium">
@@ -46,6 +46,6 @@ createRoot(document.getElementById("root")!).render(
           </RadixTheme>
         </ThemeProvider>
       </HeroUIProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
