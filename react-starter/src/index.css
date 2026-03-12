@@ -9,15 +9,15 @@
 @theme {
   --font-sans: "Google Sans", "Google Sans Text", "Google Sans Display", "Noto Sans Thai", system-ui, sans-serif;
 
-  /* Design Tokens - Customize these! */
-  --color-primary: #4285F4;
-  --color-secondary: #34A853;
-  --color-accent: #FBBC05;
-  --color-danger: #EA4335;
+  /* MOPH OB — Maternal Pink Theme */
+  --color-primary: #E91E63;
+  --color-secondary: #F06292;
+  --color-accent: #F8BBD0;
+  --color-danger: #C62828;
   --color-surface: #FFFFFF;
-  --color-background: #F8F9FA;
-  --color-text: #202124;
-  --color-text-muted: #5F6368;
+  --color-background: #F7F8FA;
+  --color-text: #333333;
+  --color-text-muted: #999999;
 }
 
 /* ============================================
@@ -27,8 +27,8 @@ body {
   font-family: "Google Sans", "Google Sans Text", "Google Sans Display", "Noto Sans Thai", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: #F7F8FA;
+  color: #333333;
   margin: 0;
 }
 
@@ -36,8 +36,40 @@ body {
   min-height: 100vh;
 }
 
-/* Force Google Sans on everything (overrides Radix Theme font) */
+/* Force Google Sans on everything */
 *,
 .radix-themes {
   font-family: "Google Sans", "Google Sans Text", "Google Sans Display", "Noto Sans Thai", system-ui, sans-serif !important;
+}
+
+/* Scrollbar — only visible when scrollable */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-color: #F8BBD0 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: #F8BBD0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F06292;
 }
