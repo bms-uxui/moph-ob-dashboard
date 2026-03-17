@@ -2,7 +2,7 @@
 
 ระบบติดตามและเฝ้าระวังการดูแลมารดาและการคลอดระดับจังหวัด สำหรับกระทรวงสาธารณสุข
 
-**เว็บไซต์:** https://joe-mak.github.io/moph-ob-dashboard/
+**เว็บไซต์:** https://bms-uxui.github.io/moph-ob-dashboard/
 
 ---
 
